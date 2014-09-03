@@ -43,27 +43,34 @@ class ActionController
      */
     private function setAction()
     {
-        if (isset($_GET['station_name'])) {
+        if (isset($_GET['station_name']))
+        {
             $this->station_name = $_GET['station_name'];
         }
-        if (isset($_GET['new_reading'])) {
+
+        if (isset($_GET['new_reading']))
+        {
             $this->action = 'new';
         }
 
-        if (isset($_GET['view_reading'])) {
+        if (isset($_GET['view_reading']))
+        {
             $this->action = 'view';
         }
 
-        if (isset($_GET['logout'])) {
+        if (isset($_GET['logout']))
+        {
             $this->action = 'logout';
         }
 
-        if (isset($_GET['browse'])) {
+        if (isset($_GET['browse']))
+        {
             $this->action = 'browse';
             $this->setSortMode();
         }
 
-        if (!isset($this->action)) {
+        if (!isset($this->action))
+        {
             $this->action = 'menu';
         }
     }
@@ -73,12 +80,16 @@ class ActionController
      */
     private function setSortMode()
     {
-        if (!isset($_GET['sort_mode'])) {
+        if (!isset($_GET['sort_mode']))
+        {
             $this->sort_mode = 'default';
-            if (isset($this->station_name)) {
+            if (isset($this->station_name))
+            {
                 $this->sort_mode = $this->sort_mode . '&station_name=' . $this->station_name;
             }
-        } else {
+        } 
+        else 
+        {
             $this->sort_mode = $_GET['sort_mode'];
         }
     }
@@ -89,33 +100,43 @@ class ActionController
      */
     private function checkLogin()
     {
-        if (!isset($_SESSION['login_status'])){
+        if (!isset($_SESSION['login_status']))
+        {
             $this->action = 'login';
-        } else {
+        }
+        else
+        {
             $this->setAction();
         }
     }
 
-    private function setDateRange() {
+    private function setDateRange()
+    {
         $this->setDate();
         $this->setStartDate();
     }
 
     private function setDate()
     {
-        if (!isset($_GET['day']) && !isset($_GET['month']) && !isset($_GET['year'])) {
+        if (!isset($_GET['day']) && !isset($_GET['month']) && !isset($_GET['year']))
+        {
             $raw_date = getDate();
             $this->date = $raw_date['year'] . "-" . $raw_date['mon'] . "-" . $raw_date['mday'];
-        } else {
+        }
+        else
+        {
             $this->date = $_GET['year'] . "-" . $_GET['month'] . "-" . $_GET['day'];
         }
     }
 
     private function setStartDate()
     {
-        if (isset($_GET['start_day']) && isset($_GET['start_month']) && isset($_GET['start_year'])) {
+        if (isset($_GET['start_day']) && isset($_GET['start_month']) && isset($_GET['start_year']))
+        {
             $this->start_date = $_GET['start_year'] . "-" . $_GET['start_month'] . "-" . $_GET['start_day'];
-        } else {
+        }
+        else
+        {
             $this->start_date = "2000-1-1";
         }
     }
@@ -123,7 +144,8 @@ class ActionController
     private function buildHeader()
     {
         $this->header = 'Location:view/';
-        switch ($this->action) {
+        switch ($this->action)
+        {
             case 'menu' :
                 $this->header .= 'menu.php';
                 break;

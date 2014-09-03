@@ -1,20 +1,22 @@
 <?php
-	include('../query/dbconnect.php');
-	include('Breaker.php');
-	include('Regulator.php');
-    include('StationRead.php');
+
+include('../query/dbconnect.php');
+include('Breaker.php');
+include('Regulator.php');
+include('StationRead.php');
 
 /**
  * Model class for a substation
  */
-class Station {
+class Station 
+{
 
-		private $station_id;
-		private $station_name;
-        private $station_read;
-		private $station_regulators = array();
-		private $station_breakers = array();
-		private $date;
+	private $station_id;
+	private $station_name;
+    private $station_read;
+	private $station_regulators = array();
+	private $station_breakers = array();
+	private $date;
 
     /**
      * Constructor for Station class
@@ -43,10 +45,13 @@ class Station {
      */
     public function submitRead()
     {
-        foreach ($this->station_regulators as $regulator) {
+        foreach ($this->station_regulators as $regulator)
+        {
             $regulator->submitRegulatorRead();
         }
-        foreach ($this->station_breakers as $breaker) {
+        
+        foreach ($this->station_breakers as $breaker)
+        {
             $breaker->submitBreakerRead();
         }
     }
@@ -56,10 +61,13 @@ class Station {
      */
     public function buildForms()
     {
-        foreach ($this->station_regulators as $regulator) {
+        foreach ($this->station_regulators as $regulator)
+        {
             $regulator->buildRegulatorForms($this->date);
         }
-        foreach ($this->station_breakers as $breaker) {
+
+        foreach ($this->station_breakers as $breaker)
+        {
             $breaker->buildBreakerForms($this->date);
         }
     }
@@ -71,10 +79,13 @@ class Station {
      */
     public function buildRead($date)
     {
-        foreach ($this->station_regulators as $regulator) {
+        foreach ($this->station_regulators as $regulator)
+        {
             $regulator->buildRegulatorRead($date);
         }
-        foreach ($this->station_breakers as $breaker) {
+
+        foreach ($this->station_breakers as $breaker)
+        {
             $breaker->buildBreakerRead($date);
         }
     }
@@ -142,9 +153,12 @@ class Station {
     {
         $array = array();
         $query = mysql_query("SELECT * FROM `station_regulator` where regulator_station_id = '$this->station_id';") or die(mysql_error());
-        while ($row = mysql_fetch_assoc($query)) {
+
+        while ($row = mysql_fetch_assoc($query))
+        {
             $array[] = new Regulator($row['regulator_id']);
         }
+
         return $array;
     }
 
@@ -152,9 +166,12 @@ class Station {
     {
         $array = array();
         $query = mysql_query("SELECT breaker_id FROM station_breaker where breaker_station_id = '$this->station_id';") or die(mysql_error());
-        while ($row = mysql_fetch_assoc($query)) {
+
+        while ($row = mysql_fetch_assoc($query))
+        {
             $array[] = new Breaker($row['breaker_id']);
         }
+
         return $array;
     }
 
