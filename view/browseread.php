@@ -3,7 +3,8 @@
     verifyLogin();
     function verifyLogin()
     {
-        if (!isset($_SESSION['login_status'])){
+        if (!isset($_SESSION['login_status']))
+        {
             header('Location:login.php');
         }
     }
