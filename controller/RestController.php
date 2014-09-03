@@ -8,3 +8,12 @@
  * @version 9/3/2014
  */
 
+class RestController 
+{
+
+	public function __construct()
+	{
+
+	}
+
+}
