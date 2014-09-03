@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26b5e223-da9e-4a5a-99fa-dc4892e5e62b" name="Default" comment="" />
+    <ignored path="cemc_apparatus.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="C:\xampp\htdocs\cemc_apparatus" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="cemc_apparatus" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="change_password.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/change_password.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="73" selection-start="1143" selection-end="1174" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="731">
+              <folding>
+                <element signature="e#6#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/menu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="118" selection-start="938" selection-end="938" vertical-scroll-proportion="0.4364303" vertical-offset="68" max-vertical-offset="986">
+              <folding>
+                <marker date="1389891614525" expanded="true" signature="1544:1565" placeholder="SELECT * FRO..station..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="change-password-style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/change-password-style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="19" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="901">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="HgRememberedInputs">
+    <option name="repositoryUrls">
+      <list>
+        <option value="https://cwilso25@bitbucket.org/cwilso25/cemc_apparatus" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/model/Station.php" />
+        <option value="$PROJECT_DIR$/model/RegulatorRead.php" />
+        <option value="$PROJECT_DIR$/style/browse-style.css" />
+        <option value="$PROJECT_DIR$/style/form-style.css" />
+        <option value="$PROJECT_DIR$/view/browseread.php" />
+        <option value="$PROJECT_DIR$/style/menu-style.css" />
+        <option value="$PROJECT_DIR$/view/viewread.php" />
+        <option value="$PROJECT_DIR$/view/processread.php" />
+        <option value="$PROJECT_DIR$/model/StationRead.php" />
+        <option value="$PROJECT_DIR$/query/SortQueries.php" />
+        <option value="$PROJECT_DIR$/odbc_test.php" />
+        <option value="$PROJECT_DIR$/query/change_password.php" />
+        <option value="$PROJECT_DIR$/style/login-style.css" />
+        <option value="$PROJECT_DIR$/style/change-password-style.css" />
+        <option value="$PROJECT_DIR$/view/change_password.php" />
+        <option value="$PROJECT_DIR$/view/menu.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="xampp">
+    <include_path>
+      <path value="." />
+      <path value="C:\xampp\php\PEAR" />
+      <path value="C:\xampp\htdocs\cemc_apparatus" />
+      <path value="C:\xampp\htdocs\cemc_apparatus\controller" />
+      <path value="C:\xampp\htdocs\cemc_apparatus\model" />
+      <path value="C:\xampp\htdocs\cemc_apparatus\query" />
+      <path value="C:\xampp\htdocs\cemc_apparatus\view" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cemc_apparatus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth1" value="225" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth2" value="232" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth0" value="236" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth3" value="911" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeOrder3" value="3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth3" value="907" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth2" value="233" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth1" value="232" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth0" value="232" />
+    <property name="options.lastSelected" value="Configurable.PHP" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder2" value="2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="PublishConfig" serverName="xampp server" serverId="ec36512b-52ca-4792-a1f0-67f1cdaaae55">
+    <servers>
+      <server id="bcf3a3e7-1163-45b6-a51f-8d0d6fe3e8a5">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="ec36512b-52ca-4792-a1f0-67f1cdaaae55">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="cemc_apparatus" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cemc_apparatus\view" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.Controller.php">
+    <configuration default="false" name="Controller.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/controller/Controller.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="ec36512b-52ca-4792-a1f0-67f1cdaaae55" server_name="xampp server">
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.Controller.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.Controller.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26b5e223-da9e-4a5a-99fa-dc4892e5e62b" name="Default" comment="" />
+      <created>1382619590254</created>
+      <updated>1382619590254</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First Commit, Working on OO form handling">
+      <created>1382643265975</created>
+      <updated>1382643265975</updated>
+    </task>
+    <task id="LOCAL-00002" summary="OO View Form Implemented, Need to Move form rendering &amp; display to view class">
+      <created>1382645026498</created>
+      <updated>1382645026498</updated>
+    </task>
+    <task id="LOCAL-00003" summary="New Reading Date Errors Fixed">
+      <created>1382646284727</created>
+      <updated>1382646284727</updated>
+    </task>
+    <task id="LOCAL-00004" summary="TODO MSGS ADDED">
+      <created>1382648229859</created>
+      <updated>1382648229859</updated>
+    </task>
+    <task id="LOCAL-00005" summary="OO Edit added, Need to move form rendering to view classes">
+      <created>1382705278708</created>
+      <updated>1382705278708</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Should Check for Existing record and insert if new, update if already exists">
+      <created>1382706921290</created>
+      <updated>1382706921290</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added method to submit new read, must implements some kind of ajax form processing">
+      <created>1382714124288</created>
+      <updated>1382714124288</updated>
+    </task>
+    <task id="LOCAL-00008" summary="working on some better form handling">
+      <created>1382717632894</created>
+      <updated>1382717632894</updated>
+    </task>
+    <task id="LOCAL-00009" summary="New form handling method implemented, working on a better way to pass dates between pages">
+      <created>1383052352421</created>
+      <updated>1383052352421</updated>
+    </task>
+    <task id="LOCAL-00010" summary="edit function implemented">
+      <created>1383055957663</created>
+      <updated>1383055957663</updated>
+    </task>
+    <task id="LOCAL-00011" summary="style added to view/edit tables, table structure switched to div instead of classic tables due to css compatability issues">
+      <created>1383075476391</created>
+      <updated>1383075476391</updated>
+    </task>
+    <task id="LOCAL-00012" summary="improved styling">
+      <created>1383078008931</created>
+      <updated>1383078008931</updated>
+    </task>
+    <task id="LOCAL-00013" summary="improved styling, image added to repository">
+      <created>1383080378446</created>
+      <updated>1383080378446</updated>
+    </task>
+    <task id="LOCAL-00014" summary="style updates">
+      <created>1383231208527</created>
+      <updated>1383231208527</updated>
+    </task>
+    <task id="LOCAL-00015" summary="style updates">
+      <created>1383239969807</created>
+      <updated>1383239969807</updated>
+    </task>
+    <task id="LOCAL-00016" summary="style updates">
+      <created>1383318812490</created>
+      <updated>1383318812490</updated>
+    </task>
+    <task id="LOCAL-00017" summary="style updates">
+      <created>1383318835203</created>
+      <updated>1383318835203</updated>
+    </task>
+    <task id="LOCAL-00018" summary="style updates">
+      <created>1383321223705</created>
+      <updated>1383321223705</updated>
+    </task>
+    <task id="LOCAL-00019" summary="style updates">
+      <created>1383675374145</created>
+      <updated>1383675374145</updated>
+    </task>
+    <task id="LOCAL-00020" summary="New Method of storing table reads, can now display all reads, sort by station, sort by date, or sort by date range">
+      <created>1383918200165</created>
+      <updated>1383918200165</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Style updates">
+      <created>1383929470682</created>
+      <updated>1383929470682</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Switch to action controller pattern , fixed several bugs in query, abandoned session approach for navigation">
+      <created>1384271196003</created>
+      <updated>1384271196003</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Unused files removed">
+      <created>1384271311232</created>
+      <updated>1384271311232</updated>
+    </task>
+    <task id="LOCAL-00024" summary="browseread now links to readings">
+      <created>1384274256265</created>
+      <updated>1384274256265</updated>
+    </task>
+    <task id="LOCAL-00025" summary="New filter methods added to browseread, changed browseread link structure to include entire column instead of just text, extracted some of display_readings to reduce duplicate code">
+      <created>1384288609098</created>
+      <updated>1384288609098</updated>
+    </task>
+    <task id="LOCAL-00026" summary="working on layout changes">
+      <created>1384445583541</created>
+      <updated>1384445583541</updated>
+    </task>
+    <task id="LOCAL-00027" summary="style updates, layout renders correctly on ipad">
+      <created>1384458683099</created>
+      <updated>1384458683099</updated>
+    </task>
+    <task id="LOCAL-00028" summary="created a new login table in the database, added new methods to prompt for login and also uses md5 hashing for added security">
+      <created>1384465221375</created>
+      <updated>1384465221375</updated>
+    </task>
+    <task id="LOCAL-00029" summary="style updates for the login box">
+      <created>1384526953022</created>
+      <updated>1384526953022</updated>
+    </task>
+    <task id="LOCAL-00030" summary="logout implemented">
+      <created>1384527530029</created>
+      <updated>1384527530029</updated>
+    </task>
+    <task id="LOCAL-00031" summary="login can no longer be bypassed by direct access to pages other than index">
+      <created>1384533429222</created>
+      <updated>1384533429222</updated>
+    </task>
+    <task id="LOCAL-00032" summary="now loads ipad view by default, minor style tweaks">
+      <created>1384534533422</created>
+      <updated>1384534533422</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Began individualizing style sheets to prevent loading unnecessary style information. Implemented a sort filter to allow viewing readings on a per station basis. Added a back button to the browse page. Added PHP Doc to ActionController.php">
+      <created>1384872493922</created>
+      <updated>1384872493922</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Preparing to implement daterange filter">
+      <created>1384877867903</created>
+      <updated>1384877867903</updated>
+    </task>
+    <task id="LOCAL-00035" summary="visibility changes for most of action controller's methods">
+      <created>1385058279871</created>
+      <updated>1385058279871</updated>
+    </task>
+    <task id="LOCAL-00036" summary="date range filter implemented">
+      <created>1385063485403</created>
+      <updated>1385063485403</updated>
+    </task>
+    <task id="LOCAL-00037" summary="removing redundant query">
+      <created>1385063541428</created>
+      <updated>1385063541428</updated>
+    </task>
+    <task id="LOCAL-00038" summary="added drop downs to change station and date in viewform.php">
+      <created>1385067972851</created>
+      <updated>1385067972851</updated>
+    </task>
+    <task id="LOCAL-00039" summary="style changes">
+      <created>1385071190121</created>
+      <updated>1385071190121</updated>
+    </task>
+    <task id="LOCAL-00040" summary="style updates &amp; spacing">
+      <created>1385135289148</created>
+      <updated>1385135289148</updated>
+    </task>
+    <task id="LOCAL-00041" summary="date bugs removed">
+      <created>1385141373541</created>
+      <updated>1385141373541</updated>
+    </task>
+    <task id="LOCAL-00042" summary="JS redirect on form select, bug fixes">
+      <created>1385155665645</created>
+      <updated>1385155665645</updated>
+    </task>
+    <task id="LOCAL-00043" summary="MySQL Export">
+      <created>1385156396100</created>
+      <updated>1385156396100</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Style updates">
+      <created>1385486090730</created>
+      <updated>1385486090730</updated>
+    </task>
+    <task id="LOCAL-00045" summary="global dbconnect string">
+      <created>1385486500077</created>
+      <updated>1385486500077</updated>
+    </task>
+    <task id="LOCAL-00046" summary="formatting">
+      <created>1385500698552</created>
+      <updated>1385500698552</updated>
+    </task>
+    <task id="LOCAL-00047" summary="formatting + phpdoc on Regulator.php">
+      <created>1386078912873</created>
+      <updated>1386078912873</updated>
+    </task>
+    <task id="LOCAL-00048" summary="formatting + phpdoc on Station.php">
+      <created>1386081491230</created>
+      <updated>1386081491230</updated>
+    </task>
+    <task id="LOCAL-00049" summary="formatting + phpdoc on StationRead &amp; Regulator Read (in progress)">
+      <created>1386089889735</created>
+      <updated>1386089889735</updated>
+    </task>
+    <task id="LOCAL-00050" summary="formatting + phpdoc on StationRead &amp; Regulator Read (in progress)">
+      <created>1386705212390</created>
+      <updated>1386705212390</updated>
+    </task>
+    <task id="LOCAL-00051" summary="style updates">
+      <created>1386884477262</created>
+      <updated>1386884477262</updated>
+    </task>
+    <task id="LOCAL-00052" summary="style updates">
+      <created>1386948806006</created>
+      <updated>1386948806006</updated>
+    </task>
+    <task id="LOCAL-00053" summary="style updates">
+      <created>1387289046418</created>
+      <updated>1387289046418</updated>
+    </task>
+    <task id="LOCAL-00054" summary="style updates / sort by date bug removed">
+      <created>1387303695400</created>
+      <updated>1387303695400</updated>
+    </task>
+    <task id="LOCAL-00055" summary="when attempting to view a reading that does not exist, the user will be redirected to the browse form with a  list of valid readings for the selected station">
+      <created>1387306297514</created>
+      <updated>1387306297514</updated>
+    </task>
+    <task id="LOCAL-00056" summary="no longer creates a new record when editing the date">
+      <created>1387383786666</created>
+      <updated>1387383786666</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Placed limit on amount of readings available in browseread">
+      <created>1387385333001</created>
+      <updated>1387385333001</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Change Password added">
+      <created>1389888849040</created>
+      <updated>1389888849041</updated>
+    </task>
+    <task id="LOCAL-00059" summary="style updates for change password page">
+      <created>1389891074742</created>
+      <updated>1389891074742</updated>
+    </task>
+    <task id="LOCAL-00060" summary="added link to change password page">
+      <created>1389891751320</created>
+      <updated>1389891751320</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2505747" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13073395" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14810282" sideWeight="0.86926603" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12239902" sideWeight="0.86926603" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1881299" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2094065" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.7905935" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908257" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Began individualizing style sheets to prevent loading unnecessary style information. Implemented a sort filter to allow viewing readings on a per station basis. Added a back button to the browse page. Added PHP Doc to ActionController.php" />
+    <MESSAGE value="Preparing to implement daterange filter" />
+    <MESSAGE value="visibility changes for most of action controller's methods" />
+    <MESSAGE value="date range filter implemented" />
+    <MESSAGE value="removing redundant query" />
+    <MESSAGE value="added drop downs to change station and date in viewform.php" />
+    <MESSAGE value="style changes" />
+    <MESSAGE value="style updates &amp; spacing" />
+    <MESSAGE value="date bugs removed" />
+    <MESSAGE value="JS redirect on form select, bug fixes" />
+    <MESSAGE value="MySQL Export" />
+    <MESSAGE value="Style updates" />
+    <MESSAGE value="global dbconnect string" />
+    <MESSAGE value="formatting" />
+    <MESSAGE value="formatting + phpdoc on Regulator.php" />
+    <MESSAGE value="formatting + phpdoc on Station.php" />
+    <MESSAGE value="formatting + phpdoc on StationRead &amp; Regulator Read (in progress)" />
+    <MESSAGE value="style updates" />
+    <MESSAGE value="style updates / sort by date bug removed" />
+    <MESSAGE value="when attempting to view a reading that does not exist, the user will be redirected to the browse form with a  list of valid readings for the selected station" />
+    <MESSAGE value="no longer creates a new record when editing the date" />
+    <MESSAGE value="Placed limit on amount of readings available in browseread" />
+    <MESSAGE value="Change Password added" />
+    <MESSAGE value="style updates for change password page" />
+    <MESSAGE value="added link to change password page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added link to change password page" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/query/SortQueries.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="39" selection-start="3719" selection-end="3719" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/display_readings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="64" selection-start="503" selection-end="503" vertical-scroll-proportion="-0.096317284" vertical-offset="272" max-vertical-offset="2176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/browseread.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="31" selection-start="2368" selection-end="2368" vertical-scroll-proportion="0.8654391" vertical-offset="256" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/StationRead.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="25" selection-start="2830" selection-end="2830" vertical-scroll-proportion="0.68696886" vertical-offset="1487" max-vertical-offset="2193" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/processread.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="32" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.7592068" vertical-offset="1181" max-vertical-offset="1887" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/viewform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="53" selection-start="381" selection-end="381" vertical-scroll-proportion="0.036827195" vertical-offset="297" max-vertical-offset="1003" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/viewread.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="81" selection-start="475" selection-end="475" vertical-scroll-proportion="0.30311614" vertical-offset="143" max-vertical-offset="884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/encrypt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="-5.8846154" vertical-offset="153" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/dbconnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="71" selection-start="8" selection-end="201" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/change_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="13" selection-start="491" selection-end="491" vertical-scroll-proportion="-10.538462" vertical-offset="236" max-vertical-offset="1054">
+          <folding>
+            <element signature="e#6#89#0" expanded="true" />
+            <marker date="1389888687672" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..station_users..." />
+            <marker date="1389888687672" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..station_users..." />
+            <marker date="1389888687672" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..station_users..." />
+            <marker date="1389888687672" expanded="true" signature="-1:-1" placeholder="select * fro..station_users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.4364303" vertical-offset="357" max-vertical-offset="1241">
+          <folding>
+            <marker date="1384523403419" expanded="true" signature="-1:-1" placeholder="SELECT passw..station_users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/login_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="110" selection-end="110" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/login-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="607" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/change-password-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="19" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/change_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="73" selection-start="1143" selection-end="1174" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="731">
+          <folding>
+            <element signature="e#6#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="118" selection-start="938" selection-end="938" vertical-scroll-proportion="0.4364303" vertical-offset="68" max-vertical-offset="986">
+          <folding>
+            <marker date="1389891614525" expanded="true" signature="1544:1565" placeholder="SELECT * FRO..station..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="hg4idea.settings">
+    <option name="CHECK_INCOMING_OUTGOING" value="false" />
+  </component>
+</project>
+

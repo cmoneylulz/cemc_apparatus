@@ -1,0 +1,49 @@
+/* Style settings for the login page */
+/* Written By: Christopher Wilson    */
+/* November 15, 2013                 */
+
+div#banner-wrapper {
+    background-color: darkgreen;
+    margin: auto;
+    width: 262px;
+}
+
+div#main-wrapper {
+    background-color: palegreen;
+    margin: auto;
+    padding: 10px;
+    width: 242px;
+}
+
+div#inner-wrapper {
+    margin: auto;
+    padding-bottom: 3px;
+    width:100%;
+}
+
+div.bold-center {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.left {
+    float: left;
+    font-weight: bold;
+    padding-top: 2px;
+    width: 85px;
+}
+
+input.button {
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 2.5em;
+    margin-left: 0;
+    padding: .25em .5em .25em .5em;
+    width: 118px;
+}
+
+

@@ -1,0 +1,52 @@
+/* CSS Style settings for menu.php */
+/* Written by: Christopher Wilson  */
+/* November 15, 2013               */
+
+div#banner {
+    background: white url("../images/logo.png") no-repeat right;
+    height: 80px;
+    margin: auto;
+    width: 100%;
+}
+
+div#banner-text {
+    float: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+div#main-wrapper {
+    background-color: palegreen;
+    margin: auto;
+    width: 100%;
+}
+
+div.center {
+    margin: auto;
+    padding: 15px;
+}
+
+input.button-right {
+    background-color: darkgreen;
+    border: .2em solid black;
+    color: white;
+    float: right;
+    font-weight: bold;
+    height: 2.5em;
+    margin-right: 0;
+    margin-top: 1em;
+    padding: .25em .5em .25em .5em;
+    width: 9em;
+}
+
+input.station-button {
+    background-color: darkgreen;
+    border: 5px solid white;
+    color: white;
+    font-weight: bold;
+    height: 7em;
+    margin: 15px;
+    width: 11em;
+}

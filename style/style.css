@@ -1,0 +1,262 @@
+/* Station Read Style Sheet
+ * Author: Christopher Wilson
+ * Version: October 29, 2013
+ */
+
+a.dark {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.light {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.header-text {
+    margin-left: 1em;
+    margin-top: .4em;
+}
+
+div.height-align {
+    display: block;
+    font-weight: bold;
+    height: 2em;
+    padding: 0;
+}
+
+div.inner-banner {
+    display: inline-table;
+    float: left;
+    font-weight: bold;
+    font-size: 2em;
+    height: auto;
+    margin-left: .5em;
+    margin-top: .5em;
+}
+
+div.left {
+    float: left;
+}
+
+div#nav-header {
+    padding-top: .5em;
+    padding-left: 1em;
+}
+
+div#nav-wrapper {
+    background: white url("../images/logo.png") no-repeat right;
+    border-left: .2em solid black;
+    border-right: .2em solid black;
+    border-top: .2em solid black;
+    height: 5em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+label {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.align-bottom {
+    position: absolute;
+    left: .5em;
+    bottom: -.6em;
+}
+
+.button {
+    background-color: darkgreen;
+    border: .2em solid black;
+    color: white;
+    font-weight: bold;
+    height: 2.5em;
+    margin-left: 0;
+    padding: .25em .5em .25em .5em;
+    width: 9em;
+}
+
+.button-right {
+    background-color: darkgreen;
+    border: .2em solid black;
+    color: white;
+    float: right;
+    font-weight: bold;
+    height: 2.5em;
+    margin-right: 0;
+    padding: .25em .5em .25em .5em;
+    width: 9em;
+}
+
+.column {
+    background-color: palegreen;
+    color: black;
+    float: left;
+    text-align: center;
+    width: 13%;
+}
+
+.column-bold {
+    background-color: palegreen;
+    color: black;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    width: 13%;
+}
+
+.column-header {
+    background-color: darkgreen;
+    color: white;
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2px;
+    text-align: center;
+    width: 13%;
+}
+
+.column-header-wide {
+    background-color: darkgreen;
+    color: white;
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2px;
+    text-align: center;
+    width: 25%;
+}
+
+.column-header-small {
+    background-color: darkgreen;
+    color: white;
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2px;
+    text-align: center;
+    width: 7%;
+}
+
+.column-small {
+    background-color: palegreen;
+    color: black;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    height: 1px;
+    width: 7%;
+}
+
+.float-left-wide {
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.float-left {
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    width: 13%;
+}
+
+.row {
+    background-color: palegreen;
+    display: inline-block;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.row-bottom {
+    background-color: palegreen;
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.row-light {
+    background-color: palegreen;
+    display: inline-block;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.row-dark {
+    background-color: darkgreen;
+    color: white;
+    display: inline-block;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.row-header {
+    background-color: darkgreen;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    display: inline-block;
+    width: 100%;
+}
+
+.row-top-header {
+    background-color: darkgreen;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-custom {
+    background-color: darkgreen;
+    border: .2em solid black;
+    color: white;
+    font-weight: bold;
+    height: 2.5em;
+    /*padding: .25em .5em .25em .5em;*/
+}
+
+.select-wrapper {
+    display:inline-block;
+}
+
+.small-wrapper {
+    margin:auto;
+    text-align: center;
+}
+
+.table-header {
+    background: white url("../images/logo.png") no-repeat right;
+    border-left: .1em solid black;
+    border-right: .1em solid black;
+    border-top: .1em solid black;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    height: 3em;
+    /*padding: 10px 10px 5px;*/
+    position: relative;
+}
+
+.table-wrapper {
+    background-color: palegreen;
+    border: .2em solid black;
+    position: relative;
+}
+
+.text-box {
+    border: .1em solid black;
+    background-color: white;
+    width: 95%;
+}
+
+.wrapper {
+    border: none;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 100%;
+}
