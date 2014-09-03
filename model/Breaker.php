@@ -180,11 +180,13 @@ class Breaker
             if ($this->has_amp > 0)
             {
 			    echo("<div class='row'>");
-            } 
+            }
+
             else
             {
                 echo("<div class='row-bottom'>");
             }
+            
 			echo("<div class='column-small'></div>");
 			echo("<div class='column-bold'>Mult " . $this->mult_header . "</div>");
 			echo("<div class='column'><input type='text' class='text-box' name='b" . $this->id . "a_mult' value='".$breakerRead->getAMult()."' /></div>");

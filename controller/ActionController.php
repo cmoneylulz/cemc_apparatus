@@ -83,11 +83,13 @@ class ActionController
         if (!isset($_GET['sort_mode']))
         {
             $this->sort_mode = 'default';
+
             if (isset($this->station_name))
             {
                 $this->sort_mode = $this->sort_mode . '&station_name=' . $this->station_name;
             }
         } 
+
         else 
         {
             $this->sort_mode = $_GET['sort_mode'];
@@ -104,6 +106,7 @@ class ActionController
         {
             $this->action = 'login';
         }
+
         else
         {
             $this->setAction();
@@ -123,6 +126,7 @@ class ActionController
             $raw_date = getDate();
             $this->date = $raw_date['year'] . "-" . $raw_date['mon'] . "-" . $raw_date['mday'];
         }
+
         else
         {
             $this->date = $_GET['year'] . "-" . $_GET['month'] . "-" . $_GET['day'];
@@ -135,6 +139,7 @@ class ActionController
         {
             $this->start_date = $_GET['start_year'] . "-" . $_GET['start_month'] . "-" . $_GET['start_day'];
         }
+
         else
         {
             $this->start_date = "2000-1-1";
@@ -149,19 +154,24 @@ class ActionController
             case 'menu' :
                 $this->header .= 'menu.php';
                 break;
+
             case 'logout' :
                 session_destroy();
                 $this->header = 'Location:index.php';
                 break;
+
             case 'view' :
                 $this->header .= 'viewread.php?station_name=' . $this->station_name . '&date=' . $this->date;
                 break;
+
             case 'new' :
                 $this->header .= 'viewform.php?station_name=' . $this->station_name . '&date=' . $this->date;
                 break;
+
             case 'browse' :
                 $this->header .= 'browseread.php?sort_mode=' . $this->sort_mode . '&startdate=' . $this->start_date . '&date=' . $this->date;
                 break;
+                
             default :
                 $this->header .= "login.php";
                 break;

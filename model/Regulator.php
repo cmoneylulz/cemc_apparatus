@@ -84,6 +84,7 @@ class Regulator
 			WHERE      `regulator_id` = '$this->id'     AND
 			           `read_date` = '$date';
 		");
+		
         return $row = mysql_fetch_assoc($query);
     }
 

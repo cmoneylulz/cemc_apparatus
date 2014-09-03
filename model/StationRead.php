@@ -10,7 +10,8 @@
  * Model class for a station reading
  * Class StationRead
  */
-class StationRead {
+class StationRead
+{
 
     private $read_id;
     private $read_date;
@@ -23,7 +24,8 @@ class StationRead {
      * @param $date
      *      the date of the substation reading
      */
-    public function __construct($station_id, $date){
+    public function __construct($station_id, $date)
+    {
         $this->station_id = $station_id;
         $this->read_date = $date;
         $this->setReadId();
@@ -34,7 +36,8 @@ class StationRead {
      * @return mixed
      *      the read id
      */
-    public function getReadId() {
+    public function getReadId()
+    {
         return $this->read_id;
     }
 
@@ -43,7 +46,8 @@ class StationRead {
      * @return mixed
      *      the correct or new readId for this reading
      */
-    public function setReadId() {
+    public function setReadId()
+    {
         $this->read_id = $this->lookupReadId();
     }
 
@@ -52,7 +56,8 @@ class StationRead {
      * @return mixed
      *      the date for this reading
      */
-    public function getReadDate() {
+    public function getReadDate()
+    {
         return $this->read_date;
     }
 
@@ -61,7 +66,8 @@ class StationRead {
      * @param $date
      *      the new date
      */
-    public function setReadDate($date) {
+    public function setReadDate($date)
+    {
         $this->read_date = $date;
     }
 
@@ -70,7 +76,8 @@ class StationRead {
      * @return mixed
      *      the id of this station
      */
-    public function getStationId() {
+    public function getStationId()
+    {
         return $this->station_id;
     }
 
@@ -79,51 +86,66 @@ class StationRead {
      * @param $id
      *      the new station id to use
      */
-    public function setStationId($id) {
+    public function setStationId($id)
+    {
         $this->station_id = $id;
     }
 
     /**
      * Submit this station read to the DB
      */
-    public function submitRead() {
+    public function submitRead() 
+    {
         include_once("../query/dbconnect.php");
+
         $query = "
             insert into `station_reads`.`station_read` (station_id, read_date)
             values ('$this->station_id', '$this->read_date');
         ";
-        if(!mysql_query($query)){
+
+        if (!mysql_query($query))
+        {
             die('Error: ' . mysql_error());
         }
+
         echo "success";
     }
 
     /**
      * Update an existing station read with information from this station read's form data
      */
-    public function updateRead() {
+    public function updateRead()
+    {
         include_once("..query/dbconnect.php");
+
         $query = "
             update  station_reads.station_read
             set     station_id = '$this->station_id',
                     read_date = '$this->read_date'
             where   station_read_id = '$this->read_id';
         ";
-        if(!mysql_query($query)){
+
+        if (!mysql_query($query))
+        {
             die('Error: ' . mysql_error());
         }
+
         echo "success";
     }
 
-    private function lookupReadId() {
+    private function lookupReadId() //TODO: PEN TESTING
+    {
         include_once("../query/dbconnect.php");
+
         $query = mysql_query("
             select  *
             from    station_read
             where   station_id = '$this->station_id' and
                     read_date = '$this->read_date';
         ");
+
         $row = mysql_fetch_assoc($query);
+        
         return $row['station_read_id'];
     }
 } 
