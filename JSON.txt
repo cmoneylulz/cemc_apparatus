@@ -1,0 +1,90 @@
+// JSON OBJECTS FOR SUBSTATION READINGS
+
+// Station
+{
+	"station_id": "NUMBER",
+	"station_name": "STRING"
+}
+
+// Station Breaker
+{
+	"breaker_id": "NUMBER", 
+	"breaker_station_id": "NUMBER", 
+	"breaker_name": "STRING", 
+	"breaker_mult_header": "NUMBER", 
+	"breaker_has_mult": "BOOLEAN", 
+	"breaker_has_amp": "BOOLEAN"
+}
+
+// Station Breaker Read
+{
+	"breaker_read_id": "NUMBER", 
+	"read_id": "NUMBER", 
+	"read_date": "DATE", 
+	"breaker_id": "NUMBER", 
+	"count": "NUMBER", 
+	"a_flag": "NUMBER", 
+	"b_flag": "NUMBER", 
+	"c_flag": "NUMBER", 
+	"n_flag": "NUMBER", 
+	"battery": "NUMBER", 
+	"a_amps": "NUMBER", 
+	"b_amps": "NUMBER", 
+	"c_amps": "NUMBER", 
+	"a_mult": "NUMBER", 
+	"b_mult": "NUMBER", 
+	"c_mult": "NUMBER", 
+	"comments": "STRING"
+}
+
+// Station Regulator
+{
+	"regulator_id": "NUMBER", 
+	"regulator_station_id": "NUMBER", 
+	"regulator_name": "STRING", 
+	"regulator_amp_header": "NUMBER"
+}
+
+// Station Regulator Read
+{
+	"regulator_read_id": "NUMBER", 
+	"read_id": "NUMBER", 
+	"regulator_id": "NUMBER", 
+	"read_date": "DATE", 
+	"a_count": "NUMBER", 
+	"a_raise": "NUMBER", 
+	"a_lower": "NUMBER", 
+	"a_amp": "NUMBER", 
+	"a_high_voltage": "NUMBER", 
+	"a_low_voltage": "NUMBER", 
+	"a_comments": "STRING", 
+	"b_count": "NUMBER", 
+	"b_raise": "NUMBER", 
+	"b_lower": "NUMBER", 
+	"b_amp": "NUMBER", 
+	"b_high_voltage": "NUMBER", 
+	"b_low_voltage": "NUMBER", 
+	"b_comments": "STRING", 
+	"c_count": "NUMBER", 
+	"c_raise": "NUMBER", 
+	"c_lower": "NUMBER", 
+	"c_amp": "NUMBER", 
+	"c_high_voltage": "NUMBER", 
+	"c_low_voltage": "NUMBER", 
+	"c_comments": "STRING"
+}
+
+// Station Users
+{
+	"user_id":int, 
+	"user_name": "STRING", 
+	"password": "STRING"
+}
+
+// Station Read
+{
+	"station_read_id": "NUMBER", 
+	"read_date": "DATE", 
+	"station_id": "NUMBER"
+}
+
