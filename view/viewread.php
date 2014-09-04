@@ -3,11 +3,13 @@
     verifyLogin();
     function verifyLogin()
     {
-        if (!isset($_SESSION['login_status'])){
+        if (!isset($_SESSION['login_status']))
+        {
             header('Location:login.php');
         }
     }
 ?>
+
 <html lang="en">
 	<head>
         <link rel="stylesheet" type="text/css" href="../style/form-style.css" />

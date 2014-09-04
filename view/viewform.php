@@ -4,10 +4,13 @@ session_start();
 verifyLogin();
 function verifyLogin()
 {
-    if (!isset($_SESSION['login_status'])){
+    if (!isset($_SESSION['login_status']))
+    {
         header('Location:login.php');
     }
-    if($_GET['station_name'] == 'All Stations') {
+
+    if($_GET['station_name'] == 'All Stations')
+    {
         header('Location:../index.php?browse=true');
     }
 }
@@ -20,6 +23,7 @@ $date = $_GET['date'];
 $station = new Station($_GET['station_name'], $date);
 
 ?>
+
 <html lang="en">
 	<head>
         <script src="/jquery.min.js"></script>
