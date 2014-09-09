@@ -87,4 +87,3 @@
 	"read_date": "DATE", 
 	"station_id": "NUMBER"
 }
-
