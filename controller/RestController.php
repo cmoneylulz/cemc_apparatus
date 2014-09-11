@@ -7,11 +7,6 @@ if (isset($_POST["request"]))
 		getStationList();
 	}
 
-	if ($_POST["request"] == "build_forms") //TODO: Deprecated
-	{
-		listFormFields($_POST["station_id"]);
-	}
-
 	if ($_POST["request"] == "get_breakers")
 	{
 		listBreakerIds($_POST["station_id"]); //validate
@@ -52,40 +47,6 @@ function getStationList()
     }
 
     $json_array['rows'] = $rows;
-    echo(json_encode($json_array));
-}
-
-function listFormFields($id)
-{
-	include('../query/dbconnect.php');
-
-	$json_array = array();
-	$json_array['cols'] = array(
-		array('label' => 'regulator_ids', 'type' => 'number'),
-		array('label' => 'breaker_ids', 'type' => 'number'),
-	);
-	$breaker_ids = array();
-    $regulator_ids = array();
-
-    $query = mysql_query("SELECT * FROM `station_regulator` where regulator_station_id = '$id';") or die(mysql_error());
-
-    while ($row = mysql_fetch_assoc($query)) 
-    {
-        $json = array("regulator_id" => $row['regulator_id']);
-        $regulator_ids[] = $json;
-    }
-
-    $query = mysql_query("SELECT breaker_id FROM station_breaker where breaker_station_id = '$id';") or die(mysql_error());
-
-    while ($row = mysql_fetch_assoc($query))
-    {
-        $json = array("breaker_id" => $row['breaker_id']);
-        $breaker_ids[] = $json;            
-    }
-
-    $json_array['rows'][0] = $regulator_ids;
-    $json_array['rows'][1] = $breaker_ids;
-
     echo(json_encode($json_array));
 }
 
