@@ -107,11 +107,9 @@ function listRegulatorInfo($regulator_id)
 		array('label' => 'regulator_amp_header', 'type' => 'number'),
 	);
 
-	$regulator_name = array('regulator_name' => $row['regulator_name']);
-	$regulator_amp_header = array('regulator_amp_header' => $row['regulator_amp_header']);
+	$json = array('regulator_name' => $row['regulator_name'], 'regulator_amp_header' => $row['regulator_amp_header']);
 
-	$json_array['rows'][0] = $regulator_name;
-	$json_array['rows'][1] = $regulator_amp_header;
+	$json_array['rows'] = $json;
 
 	echo(json_encode($json_array));
 }
