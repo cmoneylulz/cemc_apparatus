@@ -107,7 +107,10 @@ function listRegulatorInfo($regulator_id)
 		array('label' => 'regulator_amp_header', 'type' => 'number'),
 	);
 
-	$json = array('regulator_name' => $row['regulator_name'], 'regulator_amp_header' => $row['regulator_amp_header']);
+	$json = array(
+		'regulator_name' => $row['regulator_name'], 
+		'regulator_amp_header' => $row['regulator_amp_header']
+	);
 
 	$json_array['rows'] = $json;
 
@@ -128,7 +131,12 @@ function listBreakerInfo($breaker_id)
 		array('label' => 'breaker_has_amp', 'type' => 'text'),
 	);
 
-	$json = array('breaker_name' => $row['breaker_name'], 'breaker_mult_header' => $row['breaker_mult_header'], 'breaker_has_mult' => $row['breaker_has_mult'], 'breaker_has_amp' => $row['breaker_has_amp']);
+	$json = array(
+		'breaker_name' => $row['breaker_name'], 
+		'breaker_mult_header' => $row['breaker_mult_header'], 
+		'breaker_has_mult' => $row['breaker_has_mult'], 
+		'breaker_has_amp' => $row['breaker_has_amp']
+	);
 
 	$json_array['rows'] = $json;
 

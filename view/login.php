@@ -84,7 +84,3 @@ function checkLogin($username, $password)
         return 1; //Indicates password failure
     }
 }
-
-?>
-
-

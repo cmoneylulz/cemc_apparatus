@@ -2,6 +2,7 @@
 
 session_start();
 verifyLogin();
+
 function verifyLogin()
 {
     if (!isset($_SESSION['login_status']))
@@ -9,7 +10,7 @@ function verifyLogin()
         header('Location:login.php');
     }
 
-    if($_GET['station_name'] == 'All Stations')
+    if ($_GET['station_name'] == 'All Stations')
     {
         header('Location:../index.php?browse=true');
     }

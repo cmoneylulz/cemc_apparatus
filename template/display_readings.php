@@ -10,12 +10,20 @@
 include_once('../query/SortQueries.php');
 
 //TODO: Extract Method
-if(!isset($_GET['station_name']) || $_GET['station_name'] == "All Stations"){
+if (!isset($_GET['station_name']) || $_GET['station_name'] == "All Stations")
+{
     $sort_query = new SortQueries($_GET['sort_mode'], null);
-} else {
-    if ("all" == $_GET['station_name']) {
+} 
+
+else 
+{
+    if ("all" == $_GET['station_name']) 
+    {
         $sort_query = new SortQueries($_GET['sort_mode'], null);
-    } else {
+    }
+
+    else 
+    {
         $sort_query = new SortQueries($_GET['sort_mode'], $_GET['station_name']);
     }
 }
@@ -23,7 +31,8 @@ if(!isset($_GET['station_name']) || $_GET['station_name'] == "All Stations"){
 $query = mysql_query($sort_query->getSortQuery());
 $color_row = false;
 
-while($row = mysql_fetch_assoc($query)) {
+while ($row = mysql_fetch_assoc($query)) 
+{
     $color_row = generateRow($color_row);
     generateColumns($row, $color_row);
     closeDiv();
@@ -41,13 +50,18 @@ while($row = mysql_fetch_assoc($query)) {
 function generateRow($color_row)
 {
     echo("<div class='");
-    if ($color_row) {
+    if ($color_row) 
+    {
         echo("row-dark");
         $color_row = false;
-    } else {
+    }
+
+    else 
+    {
         echo("row-light");
         $color_row = true;
     }
+
     echo("'>");
     return $color_row;
 }
@@ -101,11 +115,16 @@ function generateColumns($row, $color_row)
 function openLink($row, $color_row)
 {
     echo("<a class='");
-    if ($color_row) {
+    if ($color_row) 
+    {
         echo("dark");
-    } else {
+    }
+
+    else 
+    {
         echo("light");
     }
+
     echo("' href='viewread.php?station_name=" . $row['station_name'] . "&date=" . $row['read_date'] . "'>");
 }
 
@@ -124,4 +143,3 @@ function closeDiv()
 {
     echo("</div>");
 }
-?>

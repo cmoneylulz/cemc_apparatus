@@ -1,6 +1,7 @@
 <?php
     session_start();
     verifyLogin();
+    
     function verifyLogin()
     {
         if (!isset($_SESSION['login_status']))
