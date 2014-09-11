@@ -128,15 +128,9 @@ function listBreakerInfo($breaker_id)
 		array('label' => 'breaker_has_amp', 'type' => 'text'),
 	);
 
-	$breaker_name = array('breaker_name' => $row['breaker_name']);
-	$breaker_mult_header = array('breaker_mult_header' => $row['breaker_mult_header']);
-	$breaker_has_mult = array('breaker_has_mult' => $row['breaker_has_mult']);
-	$breaker_has_amp = array('breaker_has_amp' => $row['breaker_has_amp']);
+	$json = array('breaker_name' => $row['breaker_name'], 'breaker_mult_header' => $row['breaker_mult_header'], 'breaker_has_mult' => $row['breaker_has_mult'], 'breaker_has_amp' => $row['breaker_has_amp']);
 
-	$json_array['rows'][0] = $breaker_name;
-	$json_array['rows'][1] = $breaker_mult_header;
-	$json_array['rows'][2] = $breaker_has_mult;
-	$json_array['rows'][3] = $breaker_has_amp;
+	$json_array['rows'] = $json;
 
 	echo(json_encode($json_array));
 }
