@@ -7,19 +7,24 @@ if (isset($_POST["request"]))
 		getStationList();
 	}
 
-	if ($_POST["request"] == "build_forms")
+	if ($_POST["request"] == "get_breakers")
 	{
-		listFormFields($_POST["station_id"]);
+		listBreakerIds($_POST["station_id"]); //validate
+	}
+
+	if ($_POST["request"] == "get_regulators")
+	{
+		listRegulatorIds($_POST["station_id"]); //validate
 	}
 
 	if ($_POST["request"] == "build_regulator")
 	{
-		listRegulatorInfo($_POST["regulator_id"]);
+		listRegulatorInfo($_POST["regulator_id"]); //validate
 	}
 
 	if ($_POST["request"] == "build_breaker")
 	{
-		listBreakerInfo($_POST["breaker_id"]);
+		listBreakerInfo($_POST["breaker_id"]); //validate
 	}
 }
 
@@ -45,26 +50,39 @@ function getStationList()
     echo(json_encode($json_array));
 }
 
-function listFormFields($id)
+function listRegulatorIds($station_id)
 {
 	include('../query/dbconnect.php');
 
 	$json_array = array();
 	$json_array['cols'] = array(
 		array('label' => 'regulator_ids', 'type' => 'number'),
-		array('label' => 'breaker_ids', 'type' => 'number'),
 	);
-	$breaker_ids = array();
-    $regulator_ids = array();
+	$regulator_ids = array();
 
-    $query = mysql_query("SELECT * FROM `station_regulator` where regulator_station_id = '$id';") or die(mysql_error());
+	$query = mysql_query("SELECT * FROM `station_regulator` where regulator_station_id = '$station_id';") or die(mysql_error());
 
-    while ($row = mysql_fetch_assoc($query)) {
+    while ($row = mysql_fetch_assoc($query)) 
+    {
         $json = array("regulator_id" => $row['regulator_id']);
         $regulator_ids[] = $json;
     }
 
-    $query = mysql_query("SELECT breaker_id FROM station_breaker where breaker_station_id = '$id';") or die(mysql_error());
+    $json_array['rows'] = $regulator_ids;
+    echo(json_encode($json_array));
+}
+
+function listBreakerIds($station_id)
+{
+	include('../query/dbconnect.php');
+
+	$json_array = array();
+	$json_array['cols'] = array(
+		array('label' => 'breaker_ids', 'type' => 'number'),
+	);
+	$breaker_ids = array();
+
+	$query = mysql_query("SELECT breaker_id FROM station_breaker where breaker_station_id = '$station_id';") or die(mysql_error());
 
     while ($row = mysql_fetch_assoc($query))
     {
@@ -72,8 +90,7 @@ function listFormFields($id)
         $breaker_ids[] = $json;            
     }
 
-    $json_array['rows'][0] = $regulator_ids;
-    $json_array['rows'][1] = $breaker_ids;
+    $json_array['rows'] = $breaker_ids;
 
     echo(json_encode($json_array));
 }
@@ -90,11 +107,9 @@ function listRegulatorInfo($regulator_id)
 		array('label' => 'regulator_amp_header', 'type' => 'number'),
 	);
 
-	$regulator_name = array('regulator_name' => $row['regulator_name']);
-	$regulator_amp_header = array('regulator_amp_header' => $row['regulator_amp_header']);
+	$json = array('regulator_name' => $row['regulator_name'], 'regulator_amp_header' => $row['regulator_amp_header']);
 
-	$json_array['rows'][0] = $regulator_name;
-	$json_array['rows'][1] = $regulator_amp_header;
+	$json_array['rows'] = $json;
 
 	echo(json_encode($json_array));
 }
@@ -113,15 +128,9 @@ function listBreakerInfo($breaker_id)
 		array('label' => 'breaker_has_amp', 'type' => 'text'),
 	);
 
-	$breaker_name = array('breaker_name' => $row['breaker_name']);
-	$breaker_mult_header = array('breaker_mult_header' => $row['breaker_mult_header']);
-	$breaker_has_mult = array('breaker_has_mult' => $row['breaker_has_mult']);
-	$breaker_has_amp = array('breaker_has_amp' => $row['breaker_has_amp']);
+	$json = array('breaker_name' => $row['breaker_name'], 'breaker_mult_header' => $row['breaker_mult_header'], 'breaker_has_mult' => $row['breaker_has_mult'], 'breaker_has_amp' => $row['breaker_has_amp']);
 
-	$json_array['rows'][0] = $breaker_name;
-	$json_array['rows'][1] = $breaker_mult_header;
-	$json_array['rows'][2] = $breaker_has_mult;
-	$json_array['rows'][3] = $breaker_has_amp;
+	$json_array['rows'] = $json;
 
 	echo(json_encode($json_array));
 }
