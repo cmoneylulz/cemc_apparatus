@@ -94,33 +94,6 @@ function listRegulatorInfo($regulator_id)
 	echo(json_encode($json));
 }
 
-/*
-function listBreakerInfo($breaker_id)
-{
-	include_once("../query/dbconnect.php");
-
-	$query = mysql_query("SELECT * FROM station_breaker WHERE breaker_id = $breaker_id");
-	$row = mysql_fetch_assoc($query);
-	$json_array = array();
-	$json_array['cols'] = array(
-		array('label' => 'breaker_name', 'type' => 'text'),
-		array('label' => 'breaker_mult_header', 'type' => 'number'),
-		array('label' => 'breaker_has_mult', 'type' => 'text'),
-		array('label' => 'breaker_has_amp', 'type' => 'text'),
-	);
-
-	$json = array(
-		'breaker_name' => $row['breaker_name'], 
-		'breaker_mult_header' => $row['breaker_mult_header'], 
-		'breaker_has_mult' => $row['breaker_has_mult'], 
-		'breaker_has_amp' => $row['breaker_has_amp']
-	);
-
-	$json_array['rows'] = $json;
-
-	echo(json_encode($json_array));
-}
-*/
 function listBreakerInfo($breaker_id)
 {
 	include_once("../query/dbconnect.php");
