@@ -87,6 +87,7 @@ function listRegulatorInfo($regulator_id)
 	$row = mysql_fetch_assoc($query);
 
 	$json = array(
+		'regulator_id' => $row['regulator_id'],
 		'regulator_name' => $row['regulator_name'], 
 		'regulator_amp_header' => $row['regulator_amp_header']
 	);
@@ -102,6 +103,7 @@ function listBreakerInfo($breaker_id)
 	$row = mysql_fetch_assoc($query);
 
 	$json = array(
+		'breaker_id' => $row['breaker_id'],
 		'breaker_name' => $row['breaker_name'], 
 		'breaker_mult_header' => $row['breaker_mult_header'], 
 		'breaker_has_mult' => $row['breaker_has_mult'], 
