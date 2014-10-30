@@ -33,20 +33,15 @@ function getStationList()
 	include('../query/dbconnect.php');
 
 	$json_array = array();
-	$json_array['cols'] = array(
-		array('label' => 'station_id', 'type' => 'number'),
-		array('label' => 'station_name', 'type' => 'string'),
-	);
-	$rows = array();
+	
     $query = mysql_query("SELECT * FROM station") or die(mysql_error());
 
     while($row = mysql_fetch_assoc($query))
     {
         $json = array("station_id" => $row["station_id"], "station_name" => $row["station_name"]);
-        $rows[] = $json;
+        $json_array[] = $json;
     }
 
-    $json_array['rows'] = $rows;
     echo(json_encode($json_array));
 }
 
@@ -55,20 +50,15 @@ function listRegulatorIds($station_id)
 	include('../query/dbconnect.php');
 
 	$json_array = array();
-	$json_array['cols'] = array(
-		array('label' => 'regulator_ids', 'type' => 'number'),
-	);
-	$regulator_ids = array();
 
 	$query = mysql_query("SELECT * FROM `station_regulator` where regulator_station_id = '$station_id';") or die(mysql_error());
 
     while ($row = mysql_fetch_assoc($query)) 
     {
         $json = array("regulator_id" => $row['regulator_id']);
-        $regulator_ids[] = $json;
+        $json_array[] = $json;
     }
 
-    $json_array['rows'] = $regulator_ids;
     echo(json_encode($json_array));
 }
 
@@ -77,20 +67,14 @@ function listBreakerIds($station_id)
 	include('../query/dbconnect.php');
 
 	$json_array = array();
-	$json_array['cols'] = array(
-		array('label' => 'breaker_ids', 'type' => 'number'),
-	);
-	$breaker_ids = array();
-
+	
 	$query = mysql_query("SELECT breaker_id FROM station_breaker where breaker_station_id = '$station_id';") or die(mysql_error());
 
     while ($row = mysql_fetch_assoc($query))
     {
         $json = array("breaker_id" => $row['breaker_id']);
-        $breaker_ids[] = $json;            
+        $json_array[] = $json;            
     }
-
-    $json_array['rows'] = $breaker_ids;
 
     echo(json_encode($json_array));
 }
