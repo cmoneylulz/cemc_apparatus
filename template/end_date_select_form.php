@@ -26,64 +26,62 @@ else
 }
 
 ?>
-<div class="select-wrapper">
-    <div class="select-wrapper">
-        <select name="month" id="end-month-select-form" class="select-custom">
-            <?php
-            foreach ($month_list as $key=>$month)
-            {
-                $value = $key + 1;
-                if ($current_month == $value)
-                {
-                    echo("<option value='".$value."' selected='selected'>".$month."</option>");
-                }
 
-                else 
-                {
-                    echo("<option value='".$value."'>".$month."</option>");
-                }
+<div class="select-wrapper">
+    <select name="month" id="end-month-select-form" class="select-custom">
+        <?php
+        foreach ($month_list as $key=>$month)
+        {
+            $value = $key + 1;
+            if ($current_month == $value)
+            {
+                echo("<option value='".$value."' selected='selected'>".$month."</option>");
             }
-            ?>
-        </select>
-    </div>
+
+            else 
+            {
+                echo("<option value='".$value."'>".$month."</option>");
+            }
+        }
+        ?>
+    </select>
 </div>
-<div class="select-wrapper">
-    <div class="select-wrapper">
-        <select name="day" id="end-day-select-form" class="select-custom">
-            <?php
-            for ($i=1; $i<32; $i++) 
-            {
-                if ($current_day == $i)
-                {
-                    echo("<option value='".$i."' selected='selected'>".$i."</option>");
-                }
 
-                else 
-                {
-                    echo("<option value='".$i."'>".$i."</option>");
-                }
+<div class="select-wrapper">
+    <select name="day" id="end-day-select-form" class="select-custom">
+        <?php
+        for ($i=1; $i<32; $i++) 
+        {
+            if ($current_day == $i)
+            {
+                echo("<option value='".$i."' selected='selected'>".$i."</option>");
             }
-            ?>
-        </select>
-    </div>
+
+            else 
+            {
+                echo("<option value='".$i."'>".$i."</option>");
+            }
+        }
+        ?>
+    </select>
 </div>
-<div class="select-wrapper">
-    <div class="select-wrapper">
-        <select name="year" id="end-year-select-form" class="select-custom">
-            <?php
-            for ($i=$default_date['year']; $i>=2000; $i--)
-            {
-                if ($current_year == $i)
-                {
-                    echo("<option value='".$i."' selected='selected'>".$i."</option>");
-                }
 
-                else 
-                {
-                    echo("<option value='".$i."'>".$i."</option>");
-                }
+
+<div class="select-wrapper">
+    <select name="year" id="end-year-select-form" class="select-custom">
+        <?php
+        for ($i=$default_date['year']; $i>=2000; $i--)
+        {
+            if ($current_year == $i)
+            {
+                echo("<option value='".$i."' selected='selected'>".$i."</option>");
             }
-            ?>
-        </select>
-    </div>
+
+            else 
+            {
+                echo("<option value='".$i."'>".$i."</option>");
+            }
+        }
+        ?>
+    </select>
 </div>
